@@ -32,6 +32,10 @@
   display: flex;
 }
 
+.Header .nav .link {
+  margin-left: 30px;
+}
+
 .Header .session {
   display: flex;
   margin-left: auto;
