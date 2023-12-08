@@ -4,7 +4,7 @@ import { useAuth } from 'src/firebase/auth';
 import { useSnackbar } from 'src/AppLayout/snackbar/snackbar';
 import './Login.css';
 
-function Login() {
+export default function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const snackbar = useSnackbar();
@@ -90,5 +90,3 @@ function Login() {
     </div>
   );
 }
-
-export default Login;

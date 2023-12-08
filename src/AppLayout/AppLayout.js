@@ -3,7 +3,7 @@ import { SnackbarContainer } from './snackbar/snackbar';
 import Header from './Header/Header';
 import './AppLayout.css';
 
-function AppLayout() {
+export default function AppLayout() {
   return (
     <div className="AppLayout">
       <Header />
@@ -12,5 +12,3 @@ function AppLayout() {
     </div>
   );
 }
-
-export default AppLayout;

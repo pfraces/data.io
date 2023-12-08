@@ -3,7 +3,7 @@ import { Alert, Snackbar } from '@mui/material';
 
 const SnackbarContext = createContext({});
 
-const SnackbarProvider = ({ children }) => {
+export const SnackbarProvider = ({ children }) => {
   const [snackbar, setSnackbar] = useState(null);
 
   return (
@@ -13,12 +13,12 @@ const SnackbarProvider = ({ children }) => {
   );
 };
 
-const useSnackbar = () => {
+export const useSnackbar = () => {
   const { setSnackbar } = useContext(SnackbarContext);
   return setSnackbar;
 };
 
-const SnackbarContainer = () => {
+export const SnackbarContainer = () => {
   const { snackbar, setSnackbar } = useContext(SnackbarContext);
 
   const onSnackbarClose = (event, reason) => {
@@ -51,5 +51,3 @@ const SnackbarContainer = () => {
     </div>
   );
 };
-
-export { SnackbarProvider, useSnackbar, SnackbarContainer };

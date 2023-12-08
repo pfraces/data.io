@@ -46,6 +46,4 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes);
-
-export { router };
+export const router = createBrowserRouter(routes);

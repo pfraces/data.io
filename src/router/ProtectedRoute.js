@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from 'src/firebase/auth';
 
-function ProtectedRoute({ isAllowed, redirectTo, children }) {
+export default function ProtectedRoute({ isAllowed, redirectTo, children }) {
   const { user } = useAuth();
 
   const defaultRedirectPath = user ? 'home' : '';
@@ -13,5 +13,3 @@ function ProtectedRoute({ isAllowed, redirectTo, children }) {
 
   return children ? children : <Outlet />;
 }
-
-export default ProtectedRoute;

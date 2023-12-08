@@ -1,5 +1,3 @@
-function Signup() {
+export default function Signup() {
   return <div className="Signup">Signup</div>;
 }
-
-export default Signup;
