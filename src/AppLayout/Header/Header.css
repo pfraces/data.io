@@ -1,0 +1,38 @@
+.Header {
+  display: flex;
+  background-color: var(--darkblue);
+  height: 48px;
+  color: white;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: calc(30px - 100vw + 100%);
+}
+
+.Header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 5px 0;
+  margin-right: 15px;
+}
+
+.Header .link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.Header .link:hover {
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid white;
+}
+
+.Header .nav {
+  display: flex;
+}
+
+.Header .session {
+  display: flex;
+  margin-left: auto;
+}
