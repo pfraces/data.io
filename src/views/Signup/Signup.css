@@ -1,0 +1,11 @@
+.Signup .form .field input {
+  width: 250px;
+}
+
+.Signup .actions {
+  margin-top: 10px;
+}
+
+.Signup .footer {
+  margin-top: 20px;
+}
