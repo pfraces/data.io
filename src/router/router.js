@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import ProtectedRoute from './ProtectedRoute';
 import AppLayout from 'src/AppLayout/AppLayout';
 import Landing from 'src/views/Landing/Landing';
 import Signup from 'src/views/Signup/Signup';
@@ -12,27 +13,39 @@ const routes = [
     element: <AppLayout />,
     children: [
       {
-        index: true,
-        element: <Landing />,
+        element: <ProtectedRoute isAllowed={(user) => !user} />,
+        children: [
+          {
+            index: true,
+            element: <Landing />,
+          },
+          {
+            path: 'login',
+            element: <Login />,
+          },
+          {
+            path: 'signup',
+            element: <Signup />,
+          },
+        ],
       },
       {
-        path: 'signup',
-        element: <Signup />,
-      },
-      {
-        path: 'login',
-        element: <Login />,
-      },
-      {
-        path: 'home',
-        element: <Home />,
-      },
-      {
-        path: 'profile',
-        element: <Profile />,
+        element: <ProtectedRoute isAllowed={(user) => user} />,
+        children: [
+          {
+            path: 'home',
+            element: <Home />,
+          },
+          {
+            path: 'profile',
+            element: <Profile />,
+          },
+        ],
       },
     ],
   },
 ];
 
-export const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes);
+
+export { router };
