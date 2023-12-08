@@ -94,6 +94,10 @@ article {
   margin-bottom: 3px;
 }
 
+.form .field .helper {
+  color: var(--red);
+}
+
 .form .field input {
   color: inherit;
   margin: 2px 0;
