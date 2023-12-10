@@ -9,8 +9,8 @@ export default function AppLayout() {
     <div className="AppLayout">
       <Header />
       <Outlet />
-      <SnackbarContainer />
       <NavigationDrawer />
+      <SnackbarContainer />
     </div>
   );
 }
