@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import NavigationDrawerButton from 'src/navigation/NavigationDrawerButton/NavigationDrawerButton';
 import SessionWidget from './SessionWidget/SessionWidget';
+import NavigationBar from 'src/navigation/NavigationBar/NavigationBar';
 import './Header.css';
 
 export default function Header() {
@@ -15,12 +15,10 @@ export default function Header() {
       </div>
 
       <div className="navigation-bar">
-        <Link to="home" className="link">
-          Home
-        </Link>
+        <NavigationBar />
       </div>
 
-      <div className="session">
+      <div className="widgets">
         <SessionWidget />
       </div>
     </div>

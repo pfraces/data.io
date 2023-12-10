@@ -36,6 +36,10 @@
   display: flex;
 }
 
+.Header .navigation-bar > * {
+  display: flex;
+}
+
 .Header .navigation-bar .link {
   margin-left: 30px;
 }
@@ -51,11 +55,11 @@
   }
 }
 
-.Header .session {
+.Header .widgets {
   display: flex;
   margin-left: auto;
 }
 
-.Header .session > * {
+.Header .widgets > * {
   display: flex;
 }
