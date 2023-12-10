@@ -1,5 +1,5 @@
 import { RouterProvider } from 'react-router-dom';
-import { SnackbarProvider } from './AppLayout/snackbar/snackbar';
+import { SnackbarProvider } from './layout/snackbar/snackbar';
 import { AuthProvider } from './firebase/auth';
 import { NavigationProvider } from './navigation/navigation';
 import { router } from './router/router';
