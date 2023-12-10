@@ -8,3 +8,9 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
+@media (max-width: 870px) {
+  .page-container {
+    max-width: calc(100vw - 60px);
+  }
+}
