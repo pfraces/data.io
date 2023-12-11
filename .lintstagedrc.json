@@ -1,0 +1,7 @@
+{
+  "*.md": ["prettier --write", "markdownlint-cli2 --fix"],
+  "*.json": "prettier --write",
+  "*.html": "prettier --write",
+  "*.css": ["prettier --write", "stylelint --fix"],
+  "*.js": ["prettier --write", "eslint --fix"]
+}
